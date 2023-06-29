@@ -1,0 +1,35 @@
+[
+  {
+    "company": "都内 SIer",
+    "industry": "受託開発",
+    "startAt": "2018-07-01",
+    "skills": ["Ruby on Rails", "VueJS", "React Native", "Git", "スクラム"],
+    "comments": [
+      "広告配信管理システム開発を受託開発で行いました。",
+      "レシピ提案スマホアプリの開発にアプリチームリーダーとして携わりました。"
+    ]
+  },
+  {
+    "company": "愛知県 ゲーム・アミューズメント機器",
+    "industry": "情報システム",
+    "startAt": "2012-05-01",
+    "endAt": "2018-6-30",
+    "skills": ["C#", "ExtJS", "MongoDB", "GoogleAppsScript", "G Suite"],
+    "comments": [
+      "社内向け人員管理ツール、ワークフローシステム（共にWebアプリ）の開発を行いました。",
+      "GoogleAppsScriptを用いてG Suiteユーザー、グループ管理を効率化しました。",
+      "社内ヘルプデスクとしてPC、システムの問題解決業務を行いました。"
+    ]
+  },
+  {
+    "company": "名古屋 SIer",
+    "industry": "SES",
+    "startAt": "2010-04-01",
+    "endAt": "2012-04-30",
+    "skills": ["Adobe Flex", "java", "Seasar2", "C#"],
+    "comments": [
+      "中古車販売店様向けFlexアプリを開発し、画面レイアウト、サーバー機能の実装を行いました。",
+      "SESでワイヤーハーネス設計システム開発に携わりました。"
+    ]
+  }
+]
