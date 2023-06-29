@@ -33,20 +33,12 @@ export default function Biography() {
         <Box>
           <ul>
             <li>
-              <Typography variant="body1">
-                岐阜大学工学部応用情報学科
-              </Typography>
-              <Typography variant="caption">2010年3月卒</Typography>
-            </li>
-            <li>
               <Typography variant="body1">基本情報技術者試験</Typography>
-              <Typography variant="caption">2012年8月</Typography>
+              <Typography variant="caption">2017年</Typography>
             </li>
             <li>
-              <Typography variant="body1">
-                情報セキュリティマネジメント試験
-              </Typography>
-              <Typography variant="caption">2016年5月</Typography>
+              <Typography variant="body1">情報セキュリティマネジメント試験</Typography>
+              <Typography variant="caption">2017年</Typography>
             </li>
           </ul>
         </Box>
