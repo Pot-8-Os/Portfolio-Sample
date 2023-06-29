@@ -30,7 +30,7 @@ export default function Profile() {
         <img src={icon} alt="" />
       </Box>
       <Box>
-        <Typography variant="h4">hamasho</Typography>
+        <Typography variant="h4">はまだしょう</Typography>
       </Box>
       <Box>
         <Typography variant="h5">大学院生</Typography>
