@@ -30,7 +30,7 @@ export default function Profile() {
         <img src={icon} alt="" />
       </Box>
       <Box>
-        <Typography variant="h4">はまだしょう</Typography>
+        <Typography variant="h4">ハマダショウ</Typography>
       </Box>
       <Box>
         <Typography variant="h5">大学院生</Typography>
@@ -38,7 +38,7 @@ export default function Profile() {
       <Box className={classes.sns}>
         <Box className={classes.snsIcon}>
           <a
-            href="https://twitter.com/mistolteen_dev"
+            href="https://twitter.com/peintre_inconnu"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -47,7 +47,7 @@ export default function Profile() {
         </Box>
         <Box className={classes.snsIcon}>
           <a
-            href="https://github.com/iteduki"
+            href="https://github.com/Pot-8-Os/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -56,7 +56,7 @@ export default function Profile() {
         </Box>
         <Box className={classes.snsIcon}>
           <a
-            href="https://qiita.com/mistolteen"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -65,7 +65,7 @@ export default function Profile() {
         </Box>
         <Box className={classes.snsIcon}>
           <a
-            href="https://iteduki.hateblo.jp/"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
           >
