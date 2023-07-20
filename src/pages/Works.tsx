@@ -1,55 +1,61 @@
-import React from "react"
+import React from "react";
 import {
   Box,
   Typography,
   makeStyles,
   Card,
   CardContent,
-  CardActionArea
-} from "@material-ui/core"
-import contents from "./WorksComponent/contents.json"
-import Helmet from "react-helmet"
+  CardMedia,
+  CardActionArea,
+} from "@material-ui/core";
+import contents from "./WorksComponent/contents.json";
+import Helmet from "react-helmet";
 
 type Contents = {
-  title: string
-  tools: Array<String>
-  description: string
-  href: string
-}
+  title: string;
+  tools: Array<String>;
+  description: string;
+  href: string;
+  src: string;
+};
 
-const cardWidth = 360
-const cardMargin = 20
+const cardWidth = 360;
+const cardMargin = 20;
 const useStyles = makeStyles({
   works: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    margin: 20
+    margin: 20,
   },
   cardBox: {
     display: "flex",
     flexWrap: "wrap",
     alignItems: "center",
-    maxWidth: (cardWidth + cardMargin * 2) * 3 // 一行にCard3つまで
+    maxWidth: (cardWidth + cardMargin * 2) * 3, // 一行にCard3つまで
   },
   card: {
     margin: cardMargin,
     height: 300,
-    width: cardWidth
+    width: cardWidth,
   },
   cardActionArea: {
     height: 300,
-    width: cardWidth
-  }
-})
+    width: cardWidth,
+  },
+  cardMedia: {
+    height: 100,
+    width: cardWidth,
+  },
+});
 
 export default function Works() {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Work - My portfolio!</title>
+        <title>Work - Portfolio</title>
       </Helmet>
       <Box className={classes.works}>
         <Typography variant="h2">Works</Typography>
@@ -63,7 +69,7 @@ export default function Works() {
                   rel="noopener noreferrer"
                   className={classes.cardActionArea}
                 >
-                  <CardContent>
+                  <CardMedia image={item.src} title="Image title">
                     <Typography variant="h5" align="center" gutterBottom>
                       {item.title}
                     </Typography>
@@ -73,13 +79,13 @@ export default function Works() {
                     <Typography variant="body2" gutterBottom>
                       {item.description}
                     </Typography>
-                  </CardContent>
+                  </CardMedia>
                 </CardActionArea>
               </Card>
-            )
+            );
           })}
         </Box>
       </Box>
     </>
-  )
+  );
 }
