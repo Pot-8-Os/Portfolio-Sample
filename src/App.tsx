@@ -48,7 +48,7 @@ export default function MyPortfolio() {
             className={`${classes.flex} ${classes.title}`}
             onClick={() => setValue(PageCategory.Home)}
           >
-            My Portfolio!
+            Portfolio
           </Typography>
           <Tabs value={value} onChange={handleChange}>
             <Tab label="Home" value={PageCategory.Home} />
