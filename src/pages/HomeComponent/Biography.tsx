@@ -33,12 +33,24 @@ export default function Biography() {
         <Box>
           <ul>
             <li>
-              <Typography variant="body1">基本情報技術者試験</Typography>
+              <Typography variant="body1">宅地建物取引士試験 合格</Typography>
+              <Typography variant="caption">2022年</Typography>
+            </li>
+            <li>
+              <Typography variant="body1">FP2級</Typography>
+              <Typography variant="caption">2022年</Typography>
+            </li>
+            <li>
+              <Typography variant="body1">応用情報技術者試験</Typography>
               <Typography variant="caption">2017年</Typography>
             </li>
             <li>
               <Typography variant="body1">情報セキュリティマネジメント試験</Typography>
               <Typography variant="caption">2017年</Typography>
+            </li>
+            <li>
+              <Typography variant="body1">行政書士試験 合格</Typography>
+              <Typography variant="caption">2014年</Typography>
             </li>
           </ul>
         </Box>

@@ -58,12 +58,20 @@ export default function Profile() {
           </a>
         </Box>
         <Box className={classes.snsIcon}>
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a 
+            href="https://qiita.com/Pot-8-Os" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <img src={qiitaIcon} width={32} height={32} alt="" />
           </a>
         </Box>
         <Box className={classes.snsIcon}>
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a 
+            href="http://proletari.art/wordpress/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <FaLink size={iconSize} />
           </a>
         </Box>

@@ -1,23 +1,26 @@
 [
   {
-    "title": "WEBデザイン特論（特論科目）",
-    "tools": ["M1前期 / 2単位"],
+    "title": "WEBデザイン特論",
+    "classification": "特論科目（M1前期 / 2単位）",
+    "tools": [""],
     "description": "目的：これまで作成したものを掲載するポートフォリオサイトの制作。使用した言語はReact + Material UI",
     "href": "https://docs.google.com/document/d/1ZbZscDBmmxcravICHhhxX_aqT9a24a5YHl5cCA4LPKs/edit",
     "src": "https://source.unsplash.com/random"
   },
   {
-    "title": "デザイン史特論（特論科目）",
-    "tools": ["M1前期 / 2単位"],
+    "title": "デザイン史特論",
+    "classification": "特論科目（M1前期 / 2単位）",
+    "tools": [""],
     "description": "デザイン史および関連する論文を読み解く力を身につける。発表レジュメのテーマは「スマートフォンに使用される素材の移り変わり」",
     "href": "",
-    "src": ""
+    "src": "https://source.unsplash.com/random"
   },
   {
-    "title": "特別研究Ⅰ（特別研究）",
-    "tools": ["M1通期 / 6単位"],
+    "title": "特別研究Ⅰ",
+    "classification": "特別研究（M1通期 / 6単位）",
+    "tools": [""],
     "description": "研究テーマは、webサービスの継続的な開発を行うためのフレームワーク",
     "href": "",
-    "src": ""
+    "src": "https://source.unsplash.com/random"
   }
 ]

@@ -55,7 +55,7 @@ export default function MyPortfolio() {
           </Typography>
           <Tabs value={value} onChange={handleChange}>
             <Tab label="Home" value={PageCategory.Home} />
-            <Tab label="Works" value={PageCategory.Works} />
+            <Tab label="Lecture" value={PageCategory.Works} />
             <Tab label="Resume" value={PageCategory.Resume} />
           </Tabs>
         </Toolbar>
