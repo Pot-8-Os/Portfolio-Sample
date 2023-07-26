@@ -1,47 +1,50 @@
-import React from "react"
-import { AppBar, Tabs, Tab, Toolbar, Typography } from "@material-ui/core"
-import { makeStyles } from "@material-ui/core/styles"
-import Home from "./pages/Home"
-import Works from "./pages/Works"
-import Resume from "./pages/Resume"
+import React from "react";
+import { AppBar, Tabs, Tab, Toolbar, Typography } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import Home from "./pages/Home";
+import Works from "./pages/Works";
+import Resume from "./pages/Resume";
 
 enum PageCategory {
   Home,
   Works,
-  Resume
+  Resume,
 }
 
 const useStyles = makeStyles({
   flex: {
-    flex: 1
+    flex: 1,
   },
   title: {
-    cursor: "pointer"
-  }
-})
+    cursor: "pointer",
+  },
+  header: {
+    backgroundColor: "#0d0015",
+  },
+});
 
 function SelectedPage(page: PageCategory) {
   switch (page) {
     case PageCategory.Home:
-      return <Home />
+      return <Home />;
     case PageCategory.Works:
-      return <Works />
+      return <Works />;
     case PageCategory.Resume:
-      return <Resume />
+      return <Resume />;
     default:
-      return <Home />
+      return <Home />;
   }
 }
 
 export default function MyPortfolio() {
-  const classes = useStyles()
-  const [value, setValue] = React.useState(PageCategory.Home)
+  const classes = useStyles();
+  const [value, setValue] = React.useState(PageCategory.Home);
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
-    setValue(newValue)
-  }
+    setValue(newValue);
+  };
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="static" className={`${classes.header}`}>
         <Toolbar>
           <Typography
             variant="h6"
@@ -59,5 +62,5 @@ export default function MyPortfolio() {
       </AppBar>
       {SelectedPage(value)}
     </>
-  )
+  );
 }
