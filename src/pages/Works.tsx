@@ -47,6 +47,9 @@ const useStyles = makeStyles({
     height: 100,
     width: cardWidth,
   },
+  cardContent: {
+    height: 200,
+  },
 });
 
 export default function Works() {
@@ -69,7 +72,12 @@ export default function Works() {
                   rel="noopener noreferrer"
                   className={classes.cardActionArea}
                 >
-                  <CardMedia image={item.src} title="Image title">
+                  <CardMedia
+                    image={item.src}
+                    title="Image title"
+                    className={classes.cardMedia}
+                  ></CardMedia>
+                  <CardContent className={classes.cardContent}>
                     <Typography variant="h5" align="center" gutterBottom>
                       {item.title}
                     </Typography>
@@ -79,7 +87,7 @@ export default function Works() {
                     <Typography variant="body2" gutterBottom>
                       {item.description}
                     </Typography>
-                  </CardMedia>
+                  </CardContent>
                 </CardActionArea>
               </Card>
             );

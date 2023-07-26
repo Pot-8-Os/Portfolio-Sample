@@ -1,33 +1,36 @@
-import React from "react"
-import { makeStyles } from "@material-ui/core/styles"
-import { Box } from "@material-ui/core"
-import icon from "../../assets/icon.jpg"
-import qiitaIcon from "../../assets/qiita-favicon.png"
-import { FaTwitter, FaGithub, FaLink } from "react-icons/fa"
-import Typography from "@material-ui/core/Typography"
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import { Box } from "@material-ui/core";
+import icon from "../../assets/icon.jpg";
+import qiitaIcon from "../../assets/qiita-favicon.png";
+import { FaTwitter, FaGithub, FaLink } from "react-icons/fa";
+import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   profile: {
     flexGrow: 1,
     display: "flex",
     flexDirection: "column",
-    alignItems: "center"
+    alignItems: "center",
   },
   sns: {
-    display: "flex"
+    display: "flex",
   },
   snsIcon: {
-    padding: 16
-  }
-})
+    padding: 16,
+  },
+  icon: {
+    width: 200,
+  },
+});
 
 export default function Profile() {
-  const classes = useStyles()
-  const iconSize = 32
+  const classes = useStyles();
+  const iconSize = 32;
   return (
     <Box className={classes.profile}>
       <Box>
-        <img src={icon} alt="" />
+        <img src={icon} alt="" className={classes.icon} />
       </Box>
       <Box>
         <Typography variant="h4">ハマダショウ</Typography>
@@ -55,24 +58,16 @@ export default function Profile() {
           </a>
         </Box>
         <Box className={classes.snsIcon}>
-          <a
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="" target="_blank" rel="noopener noreferrer">
             <img src={qiitaIcon} width={32} height={32} alt="" />
           </a>
         </Box>
         <Box className={classes.snsIcon}>
-          <a
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="" target="_blank" rel="noopener noreferrer">
             <FaLink size={iconSize} />
           </a>
         </Box>
       </Box>
     </Box>
-  )
+  );
 }
