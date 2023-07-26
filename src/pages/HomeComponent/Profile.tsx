@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   snsIcon: {
     padding: 16,
   },
-  icon: {
+  profileImage: {
     width: 200,
   },
 });
@@ -30,7 +30,7 @@ export default function Profile() {
   return (
     <Box className={classes.profile}>
       <Box>
-        <img src={icon} alt="" className={classes.icon} />
+        <img src={icon} alt="" className={classes.profileImage} />
       </Box>
       <Box>
         <Typography variant="h4">ハマダショウ</Typography>
