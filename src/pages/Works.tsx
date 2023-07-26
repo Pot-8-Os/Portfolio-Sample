@@ -13,6 +13,7 @@ import Helmet from "react-helmet";
 
 type Contents = {
   title: string;
+  classification: string;
   tools: Array<String>;
   description: string;
   href: string;
@@ -58,10 +59,10 @@ export default function Works() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Work - Portfolio</title>
+        <title>Lecture - Portfolio</title>
       </Helmet>
       <Box className={classes.works}>
-        <Typography variant="h2">Works</Typography>
+        <Typography variant="h2">Lecture</Typography>
         <Box className={classes.cardBox}>
           {contents.map((item: Contents) => {
             return (
@@ -80,6 +81,9 @@ export default function Works() {
                   <CardContent className={classes.cardContent}>
                     <Typography variant="h5" align="center" gutterBottom>
                       {item.title}
+                    </Typography>
+                    <Typography variant="body1" align="center" gutterBottom>
+                      {item.classification}
                     </Typography>
                     <Typography variant="body1" align="center" gutterBottom>
                       {item.tools.join(" + ")}

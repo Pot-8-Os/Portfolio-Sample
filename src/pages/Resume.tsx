@@ -1,11 +1,22 @@
 import React from "react";
-import { Box, Typography, Card, CardContent } from "@material-ui/core";
+import {
+  Box,
+  Typography,
+  Card,
+  CardContent,
+  CardMedia,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+} from "@material-ui/core";
+import { FaGithubAlt, FaAngleDown } from "react-icons/fa";
 import { makeStyles } from "@material-ui/styles";
 import contents from "./ResumeComponent/contents.json";
 import dayjs from "dayjs";
 import Helmet from "react-helmet";
 
 type Resume = {
+  src: string;
   company: String;
   industry: String;
   startAt: String;
@@ -27,6 +38,7 @@ const useStyles = makeStyles({
     margin: 20,
   },
   skillCard: { margin: 8 },
+  cardMedia: { height: 150 },
 });
 
 export default function Resume() {
@@ -35,13 +47,18 @@ export default function Resume() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Resume - My portfolio!</title>
+        <title>Resume - Portfolio</title>
       </Helmet>
       <Box className={classes.resume}>
         <Typography variant="h2">Resume</Typography>
         {contents.map((item: Resume) => {
           return (
             <Card className={classes.card}>
+              <CardMedia
+                image={item.src}
+                title="Image title"
+                className={classes.cardMedia}
+              ></CardMedia>
               <CardContent>
                 <Typography variant="h4">{item.company}</Typography>
                 <ul>
@@ -70,18 +87,24 @@ export default function Resume() {
                     );
                   })}
                 </Box>
-                <Typography variant="h5" gutterBottom>
-                  コメント
-                </Typography>
-                <ul>
-                  {item.comments.map((comment) => {
-                    return (
-                      <li>
-                        <Typography variant="body1">{comment}</Typography>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <Accordion>
+                  <AccordionSummary expandIcon={<FaAngleDown />}>
+                    <Typography variant="h5" gutterBottom>
+                      コメント
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <ul>
+                      {item.comments.map((comment) => {
+                        return (
+                          <li>
+                            <Typography variant="body1">{comment}</Typography>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </AccordionDetails>
+                </Accordion>
               </CardContent>
             </Card>
           );
