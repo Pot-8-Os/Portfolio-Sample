@@ -36,9 +36,15 @@ const useStyles = makeStyles({
     width: "100%",
     maxWidth: 1200,
     margin: 20,
+    border: "solid 2px grey",
   },
   skillCard: { margin: 8 },
-  cardMedia: { height: 150 },
+  cardMedia: {
+    height: 150,
+  },
+  typography: {
+    borderBottom: "solid 10px grey",
+  },
 });
 
 export default function Resume() {

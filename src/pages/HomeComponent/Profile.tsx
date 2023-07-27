@@ -22,6 +22,9 @@ const useStyles = makeStyles({
   profileImage: {
     width: 200,
   },
+  // pageTitle: {
+  //   alignItems: "left",
+  // },
 });
 
 export default function Profile() {
@@ -29,6 +32,9 @@ export default function Profile() {
   const iconSize = 32;
   return (
     <Box className={classes.profile}>
+      {/* <Box className={classes.pageTitle}>
+        <Typography variant="h3">Profole</Typography>
+      </Box> */}
       <Box>
         <img src={icon} alt="" className={classes.profileImage} />
       </Box>
@@ -58,18 +64,18 @@ export default function Profile() {
           </a>
         </Box>
         <Box className={classes.snsIcon}>
-          <a 
-            href="https://qiita.com/Pot-8-Os" 
-            target="_blank" 
+          <a
+            href="https://qiita.com/Pot-8-Os"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <img src={qiitaIcon} width={32} height={32} alt="" />
           </a>
         </Box>
         <Box className={classes.snsIcon}>
-          <a 
-            href="http://proletari.art/wordpress/" 
-            target="_blank" 
+          <a
+            href="http://proletari.art/wordpress/"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <FaLink size={iconSize} />
